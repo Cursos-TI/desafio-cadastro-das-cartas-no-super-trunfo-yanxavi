@@ -103,6 +103,6 @@ int main() {
   printf("\nPontos Turísticos: %d", turismo2);
 
 
-  printf("\n\nCADASTRO CONCLUÍDO!\n\n");
+  printf("\n\n==== CADASTRO CONCLUÍDO! ====\n\n");
   return 0;
 }
