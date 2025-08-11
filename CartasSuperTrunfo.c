@@ -18,7 +18,7 @@ int main() {
   scanf("%s", estado1);
   printf("Código do estado (Abreviatura; ex. NY):\n");
   scanf("%s", codigo1);
-  printf("Nome da cidadse (SEM ESPAÇOS; ex. nova-iorque):\n");
+  printf("Nome da cidade (SEM ESPAÇOS; ex. nova-iorque):\n");
   scanf("%s", cidade1);
   printf("População da cidade (SEM PONTOS OU VÍRGULAS):\n");
   scanf("%d", &populacao1);
@@ -49,7 +49,8 @@ int main() {
   scanf("%d", &turismo2);
 
   // ############################ IMPRESSÃO DAS CARTAS ############################
-  printf("\n=====INFORMAÇÕES=====\n\nPRIMEIRA CARTA");
+  printf("\n=====INFORMAÇÕES=====\n");
+  printf("\nPRIMEIRA CARTA");
   printf("\nEstado: %s", estado1);
   printf("\nCódigo: %s", codigo1);
   printf("\nCidade: %s", cidade1);
@@ -68,6 +69,6 @@ int main() {
   printf("\nPontos Turísticos: %d", turismo2);
 
 
-  printf("\n\n==== CADASTRO CONCLUÍDO! ====\n\n");
+  printf("\n\n=====CADASTRO CONCLUÍDO!=====\n\n");
   return 0;
 }
