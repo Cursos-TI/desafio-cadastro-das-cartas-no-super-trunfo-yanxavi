@@ -2,12 +2,10 @@
 
 int main() {
   // ############################ DECLARAÇÃO DE VARIÁVEIS ############################
-
   // carta 1
   int populacao1, turismo1;
   float area1, pib1;
   char estado1[20], codigo1[3], cidade1[30];
-
   // carta 2
   int populacao2, turismo2;
   float area2, pib2;
