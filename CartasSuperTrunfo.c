@@ -4,11 +4,11 @@ int main() {
   // ############################ DECLARAÇÃO DE VARIÁVEIS ############################
   // carta 1
   int populacao1, turismo1;
-  float area1, pib1;
+  float area1, pib1, densidadePopulacional1, pibpc1;
   char estado1[20], codigo1[3], cidade1[30];
   // carta 2
   int populacao2, turismo2;
-  float area2, pib2;
+  float area2, pib2, densidadePopulacional2, pibpc2;
   char estado2[20], codigo2[3], cidade2[30];
 
   // ############################ CADASTRO DA PRIMEIRA CARTA ############################
@@ -29,24 +29,27 @@ int main() {
   printf("N° de Pontos turísticos:\n");
   scanf("%d", &turismo1);
 
+  densidadePopulacional1 = (float)(populacao1 / area1);
+  pibpc1 = (float)(pib1 / populacao1);
 
-  // ############################ CADASTRO DA SEGUNDA CARTA ############################
-  printf("\n==== CADASTRO DA SEGUNDA CARTA ====\n");
 
-  printf("Nome do estado (SEM ESPAÇOS; ex. new-york):\n");
-  scanf("%s", estado2);
-  printf("Código do estado (Abreviatura; ex. NY):\n");
-  scanf("%s", codigo2);
-  printf("Nome da cidade (SEM ESPAÇOS; ex. nova-iorque):\n");
-  scanf("%s", cidade2);
-  printf("População da cidade (SEM PONTOS OU VÍRGULAS):\n");
-  scanf("%d", &populacao2);
-  printf("PIB:\n");
-  scanf("%f", &pib2);
-  printf("Área em Km²:\n");
-  scanf("%f", &area2);
-  printf("N° de Pontos turísticos:\n");
-  scanf("%d", &turismo2);
+//   // ############################ CADASTRO DA SEGUNDA CARTA ############################
+//   printf("\n==== CADASTRO DA SEGUNDA CARTA ====\n");
+
+//   printf("Nome do estado (SEM ESPAÇOS; ex. new-york):\n");
+//   scanf("%s", estado2);
+//   printf("Código do estado (Abreviatura; ex. NY):\n");
+//   scanf("%s", codigo2);
+//   printf("Nome da cidade (SEM ESPAÇOS; ex. nova-iorque):\n");
+//   scanf("%s", cidade2);
+//   printf("População da cidade (SEM PONTOS OU VÍRGULAS):\n");
+//   scanf("%d", &populacao2);
+//   printf("PIB:\n");
+//   scanf("%f", &pib2);
+//   printf("Área em Km²:\n");
+//   scanf("%f", &area2);
+//   printf("N° de Pontos turísticos:\n");
+//   scanf("%d", &turismo2);
 
   // ############################ IMPRESSÃO DAS CARTAS ############################
   printf("\n=====INFORMAÇÕES=====\n");
@@ -59,14 +62,14 @@ int main() {
   printf("\nÁrea: %.1f", area1);
   printf("\nPontos Turísticos: %d \n", turismo1);
 
-  printf("\nSEGUNDA CARTA");
-  printf("\nEstado: %s", estado2);
-  printf("\nCódigo: %s", codigo2);
-  printf("\nCidade: %s", cidade2);
-  printf("\nPopulação: %d", populacao2);
-  printf("\nPIB: %.1f", pib2);
-  printf("\nÁrea: %.1f", area2);
-  printf("\nPontos Turísticos: %d", turismo2);
+//   printf("\nSEGUNDA CARTA");
+//   printf("\nEstado: %s", estado2);
+//   printf("\nCódigo: %s", codigo2);
+//   printf("\nCidade: %s", cidade2);
+//   printf("\nPopulação: %d", populacao2);
+//   printf("\nPIB: %.1f", pib2);
+//   printf("\nÁrea: %.1f", area2);
+//   printf("\nPontos Turísticos: %d", turismo2);
 
 
   printf("\n\n=====CADASTRO CONCLUÍDO!=====\n\n");
